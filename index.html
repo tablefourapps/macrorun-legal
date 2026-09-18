@@ -3,21 +3,190 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MacroRun Legal</title>
+    <title>MacroRun by TableFour LLC</title>
+    <meta
+      name="description"
+      content="MacroRun helps you log meals, estimate macros, find leftover-friendly food nearby, and follow simple training programs. Built by TableFour LLC."
+    />
     <style>
-      body { margin: 0; padding: 24px 16px; font-family: system-ui, sans-serif; background: #f7f6f3; color: #1a1a1a; }
-      main { max-width: 40rem; margin: 0 auto; }
-      a { color: #0b57d0; }
+      :root {
+        --bg: #0f1115;
+        --card: #1a1d24;
+        --text: #f2f2f4;
+        --muted: #a8adb8;
+        --accent: #7dd3a0;
+        --line: #2a2f3a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+      }
+      a { color: var(--accent); }
+      header, main, footer {
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 1.25rem 1.1rem;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        align-items: baseline;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--line);
+      }
+      .brand { font-weight: 700; letter-spacing: 0.02em; text-decoration: none; color: var(--text); }
+      nav { display: flex; flex-wrap: wrap; gap: 0.9rem; font-size: 0.95rem; }
+      nav a { color: var(--muted); text-decoration: none; }
+      nav a:hover { color: var(--text); }
+      h1 { font-size: clamp(1.75rem, 4vw, 2.35rem); line-height: 1.2; margin: 1.5rem 0 0.75rem; }
+      h2 { font-size: 1.2rem; margin: 2rem 0 0.6rem; }
+      p, li { color: var(--muted); }
+      .lead { color: var(--text); font-size: 1.08rem; }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+        margin: 1rem 0;
+      }
+      .card h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: var(--text); }
+      .grid { display: grid; gap: 0.85rem; }
+      @media (min-width: 640px) {
+        .grid { grid-template-columns: 1fr 1fr; }
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 0.75rem;
+        padding: 0.65rem 1rem;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #0b1a12;
+        font-weight: 650;
+        text-decoration: none;
+      }
+      .note { font-size: 0.9rem; }
+      address { font-style: normal; color: var(--muted); }
+      footer {
+        border-top: 1px solid var(--line);
+        margin-top: 2rem;
+        padding-bottom: 2.5rem;
+        font-size: 0.9rem;
+      }
     </style>
   </head>
   <body>
+    <header>
+      <a class="brand" href="/">MacroRun</a>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>MacroRun</h1>
-      <p>Legal documents for the MacroRun app by TableFour LLC.</p>
-      <ul>
-        <li><a href="/privacy/">Privacy Policy</a></li>
-        <li><a href="/terms/">Terms of Use</a></li>
-      </ul>
+      <h1>Log meals. Stay on your macros. Train with a plan.</h1>
+      <p class="lead">
+        MacroRun is a mobile app from <strong>TableFour LLC</strong> that helps you
+        track food, estimate protein, carbs, fat, and calories, find leftover-friendly
+        places nearby, and follow simple workout programs.
+      </p>
+      <p class="note">
+        Macro and calorie numbers are <strong>estimates</strong>, not medical advice,
+        diagnosis, or a dietitian service.
+      </p>
+      <a class="cta" href="https://zest-wolf-shadow-xenon.grok.me" rel="noopener">Open live demo</a>
+
+      <section id="product">
+        <h2>What MacroRun does</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Scan Food &amp; Fridge</h3>
+            <p>
+              Snap a plated meal or fridge leftovers. MacroRun uses an AI estimate
+              (xAI Grok) so you can review items, edit macros, and log what you ate.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Nearby</h3>
+            <p>
+              See restaurants near you with leftover-friendly suggested builds when we
+              have verified chain nutrition, or honest tips when we do not.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Log &amp; search</h3>
+            <p>
+              Search common foods and brand items, add meals to your diary, and adjust
+              logged macros anytime.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Train</h3>
+            <p>
+              Browse programs and continue the workout you are following — training
+              lives in the app alongside your food day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="company">
+        <h2>About TableFour LLC</h2>
+        <div class="card">
+          <p>
+            MacroRun is developed and published by <strong>TableFour LLC</strong>, a
+            California limited liability company.
+          </p>
+          <address>
+            TableFour LLC<br />
+            2108 N St Ste N<br />
+            Sacramento, CA 95816<br />
+            United States
+          </address>
+          <p>
+            Legal entity name: TableFour LLC<br />
+            Product: MacroRun
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>
+            For product, privacy, or business questions:
+            <a href="mailto:hello@tablefourapps.com">hello@tablefourapps.com</a>
+          </p>
+          <p>
+            Support-style mail can also reach
+            <a href="mailto:zohaib@tablefourapps.com">zohaib@tablefourapps.com</a>.
+          </p>
+        </div>
+      </section>
+
+      <section id="legal">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Use</a></li>
+        </ul>
+      </section>
     </main>
+
+    <footer>
+      <p>© TableFour LLC. MacroRun. All rights reserved.</p>
+      <p class="note">
+        Site:
+        <a href="https://macrorun.tablefourapps.com">macrorun.tablefourapps.com</a>
+      </p>
+    </footer>
   </body>
 </html>
