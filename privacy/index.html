@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MacroRun Privacy</title>
+    <title>MacroRun Privacy Policy</title>
     <style>
       :root {
         color-scheme: dark;
@@ -69,6 +69,18 @@
       }
       a { color: var(--accent); }
       footer a { color: var(--accent); }
+      table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.92rem; }
+      th, td { text-align: left; vertical-align: top; padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--line); color: var(--muted); }
+      th { color: var(--text); font-weight: 600; }
+      ul { margin: 0.4rem 0 0; padding-left: 1.2rem; color: var(--muted); }
+      li { margin: 0.25rem 0; }
+      p + p { margin-top: 0.6rem; }
+      strong { color: var(--text); }
+      .region-head { border-top: 2px solid var(--accent); }
+      h2.big { font-size: 1.3rem; }
+      .toc a { margin-right: 0.8rem; }
+      section { scroll-margin-top: 1rem; }
+      .table-wrap { overflow-x: auto; }
     </style>
   </head>
   <body>
@@ -79,39 +91,245 @@
         <a href="/#company">Company</a>
         <a href="/#contact">Contact</a>
         <a href="/privacy/">Privacy</a>
+        <a href="/privacy/#consumer-health-data">Consumer Health Data Privacy Policy</a>
         <a href="/terms/">Terms</a>
       </nav>
     </header>
 <main>
-      <h1>MacroRun Privacy</h1>
-      <p class="byline">Published by TableFour LLC for MacroRun.</p>
-      <section>
-        <h2>Fridge and leftover photos</h2>
-        <p>When you allow it, leftover photos, plated-meal photos, and typed meal descriptions are sent to our estimator (xAI Grok) so we can identify food and estimate protein, carbs, fat, and kcal. We do not keep the photo after the estimate — only a short-lived hash so the same photo is not billed twice. We do not use those photos or descriptions for ads. Empty or unreadable photos are not stored as a meal.</p>
-      </section>
-      <section>
-        <h2>On-device profile</h2>
-        <p>Your profile, meal log, and workouts stay on this device in local storage. We do not require an account to use leftover-nearby. Clearing the local session on You removes that data from this device.</p>
-      </section>
-      <section>
-        <h2>Location for nearby</h2>
-        <p>Location is used at the moment you open or refresh Nearby: we send that lat/lng through our server to Google Places to list restaurants around you, then rank them by your food likes, distance, and leftover fit. If you decline location, we do not guess a city. Nearby orders stay free.</p>
-      </section>
-      <section>
-        <h2>Estimates, not medical advice</h2>
-        <p>Protein, carbs, fat, and calories are estimates (4×P + 4×C + 9×F). MacroRun is not medical advice, diagnosis, or a dietitian.</p>
-      </section>
-      <section>
-        <h2>Free scans and Plus</h2>
-        <p>Free includes leftover-nearby. Scan Food and Fridge photo scans share one pool of three successful reads per device per 7 days. Plus is 50 successful photo scans per 30 days. Diary, USDA search, Train, How-to, and Nearby stay free. On iOS, payment is charged to your Apple ID through the App Store and auto-renews until you cancel in Apple ID Settings → Subscriptions. On Android, payment is charged through Google Play Billing and auto-renews until you cancel in Google Play → Payments &amp; subscriptions (or Play Store → profile → Payments &amp; subscriptions). Prices are shown in the store before you buy.</p>
-      </section>
-      <section>
-        <h2>Third-party How-to sites</h2>
-        <p>If you tap How-to, your device may open MuscleWiki, ExRx, or another allowlisted demo site. That visit is between you and that site under their privacy policy. MacroRun does not receive the page content from that visit.</p>
-      </section>
+      <h1>MacroRun Privacy Policy</h1>
+      <div class="byline"><p><strong>Effective date:</strong> September 24, 2026<br/>
+<strong>Who we are:</strong> TableFour LLC ("TableFour", "we", "us"), the company that makes MacroRun. Mailing address: 2108 N St Ste N, Sacramento, CA 95816. Email: hello@tablefourapps.com.</p>
+<p>MacroRun is currently offered only in the <strong>United States, Australia, and New Zealand</strong>. It is not offered in, or directed to people in, the European Union, the UK, or China, and we do not claim compliance with the EU GDPR. The main body of this policy applies to everyone. Extra details for specific places are in the <a href="#regional-supplements">Regional supplements</a> at the end.</p></div>
+      <p class="toc">Jump to: <a href="#vendors">Who we share with</a><a href="#retention">Retention</a><a href="#your-rights">Your rights</a><a href="#us">United States</a><a href="#consumer-health-data">Consumer Health Data</a><a href="#australia">Australia</a><a href="#new-zealand">New Zealand</a><a href="#contact">Contact</a></p>
+<section id="short-version">
+<h2>1. The short version</h2>
+<ul>
+<li><strong>No account needed.</strong> MacroRun 1.0 has no sign-in. Your profile, meal log, workouts, saved foods, and achievements stay on your device.</li>
+<li><strong>Photo and typed meal estimates</strong> are sent through our server to xAI only after you allow it, so we can estimate protein, carbs, fat, and kcal. We do not keep the photo.</li>
+<li><strong>Location</strong> is used only when you open or refresh Nearby, and only if you allow it.</li>
+<li><strong>Our server keeps a small scan counter</strong> (a random device ID and your IP address) so the free scan limit works.</li>
+<li><strong>We do not sell your personal information, we do not share it for cross-context behavioral advertising, and we do not track you</strong> across other companies' apps or websites.</li>
+</ul>
+</section>
+<section id="on-device">
+<h2>2. Information that stays on your device</h2>
+<p>Your profile, meal log, workouts, saved foods, and achievements are stored locally on your device. We do not receive them. Deleting the app, or clearing MacroRun's data on your device, removes them. Because we don't hold this data, we can't recover it for you if it is deleted.</p>
+<p>Cloud sync and analytics are <strong>off</strong> in this version. If we ever turn on cloud sync, analytics, or accounts, we will update this policy first and ask for any consent the law requires.</p>
+</section>
+<section id="what-we-collect">
+<h2>3. Information we collect and why</h2>
+<p><strong>a. Meal photos and typed meal descriptions (only after you allow it).</strong> When you allow it, leftover photos, plated-meal photos, fridge photos, and typed meal descriptions are sent through our server to our estimator (xAI Grok) so we can identify food and estimate protein, carbs, fat, and kcal. Fridge photo scans also send your remaining calories, protein, carbs, and fat for today, so the estimator can suggest meals that fit them. We do not keep the photo after the estimate. We keep only a short-lived hash (a fingerprint that can't be turned back into the photo) so the same photo is not billed twice. We do not use those photos or descriptions for ads. Empty or unreadable photos are not stored as a meal. You can withdraw that permission in Profile, under Photo estimates, with Turn off. Please avoid including faces, documents, or other personal details in food photos.</p>
+<p><strong>b. Scan counter (random device ID and IP address).</strong> To enforce the photo-scan limits (Free: 3 successful photo scans per device per 7 days; Plus: 50 per 30 days), our server stores a record with a random device ID created by the app, your device's IP address at the time of the scan, and scan counts and times. We use it only to apply the limit and to prevent abuse of the free tier.</p>
+<p><strong>c. Location for Nearby (only when you allow it).</strong> When you open or refresh Nearby and have allowed location, your device's precise latitude and longitude are sent through our server to Geoapify to list restaurants around you. We then rank them by your food likes, distance, and leftover fit. Restaurant map data is © OpenStreetMap contributors (ODbL). We do not store your coordinates on our server. If you decline location, we do not guess your city. You can turn location off at any time in iOS Settings.</p>
+<p><strong>d. Subscription status.</strong> MacroRun Plus is bought through Apple In-App Purchase. Apple processes the payment. We receive the purchase and entitlement status (for example, whether Plus is active), and we do not receive your card details. We use that status to unlock Plus features and apply the Plus scan limit.</p>
+<p><strong>e. Bug reports and emails.</strong> "Report a bug" opens your mail app addressed to hello@tablefourapps.com. We receive whatever you choose to send, such as your email address, your message, attachments, and the optional app and device version. We use it to reply and fix problems.</p>
+<p><strong>f. Basic technical data.</strong> Like any internet service, our hosting provider (Vercel) receives your IP address and basic request details (such as time and the app request made) when the app talks to our server. This data is used to deliver the request, keep the service secure, and debug errors.</p>
+<p>We do not collect your name, contacts, or advertising identifier, and we do not use third-party ad or analytics SDKs.</p>
+</section>
+<section id="vendors">
+<h2>4. Who we share information with</h2>
+<p>We share information only with service providers that process it for us so the app works:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>What they get</th>
+<th>Why</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vercel</strong> (hosting / API proxy)</td>
+<td>IP address, request data, photos/text/coordinates in transit</td>
+<td>Runs our server and relays requests</td>
+<td>United States</td>
+</tr>
+<tr>
+<td><strong>Neon</strong> (database)</td>
+<td>Scan counter record (random device ID, IP address, counts)</td>
+<td>Enforces scan limits</td>
+<td>United States</td>
+</tr>
+<tr>
+<td><strong>xAI</strong> (SpaceXAI LLC, Grok API)</td>
+<td>Meal photo, typed description, remaining macros for fridge scans</td>
+<td>Returns the food estimate</td>
+<td>United States, and possibly other countries where xAI and its sub-processors operate</td>
+</tr>
+<tr>
+<td><strong>Geoapify</strong> (places search)</td>
+<td>Latitude/longitude and search parameters (sent from our server)</td>
+<td>Lists nearby restaurants</td>
+<td>Germany / EU</td>
+</tr>
+<tr>
+<td><strong>Apple</strong></td>
+<td>Payment and App Store data under Apple's own privacy policy</td>
+<td>Distribution and payments</td>
+<td>Per Apple</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>About xAI:</strong> xAI processes the photo or text to return the estimate. Under xAI's API terms, xAI does not use API inputs or outputs to train its models, and it may keep the request for up to 30 days to check for abuse, then deletes it (longer only if the law requires it or the request is flagged for a safety or abuse investigation).</p>
+<p><strong>About Geoapify:</strong> Geoapify's privacy policy says it generally keeps data for successful API requests for no longer than 24 hours.</p>
+<p>We may also disclose information if the law requires it, to protect people's safety or our rights, or as part of a merger or sale of our business (in which case this policy continues to apply to it). We do not sell personal information. We do not share it for cross-context behavioral advertising. We do not use it for targeted advertising. We do not "track" you as Apple defines it.</p>
+</section>
+<section id="estimates">
+<h2>5. Estimates, not medical advice</h2>
+<p>Protein, carbs, fat, and calories are estimates (4×P + 4×C + 9×F). MacroRun is not medical advice, diagnosis, or a dietitian.</p>
+</section>
+<section id="third-party-sites">
+<h2>6. Third-party How-to sites</h2>
+<p>If you tap How-to, your device may open MuscleWiki, ExRx, or another allowlisted demo site. That visit is between you and that site, under its privacy policy. MacroRun does not receive the page content from that visit.</p>
+</section>
+<section id="retention">
+<h2>7. How long we keep information</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Information</th>
+<th>How long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Profile, meal log, workouts, saved foods, achievements</td>
+<td>On your device until you delete them or the app. We don't hold them.</td>
+</tr>
+<tr>
+<td>Meal photos and typed descriptions</td>
+<td>Not stored by us after the estimate. xAI may keep the request for up to 30 days (see section 4).</td>
+</tr>
+<tr>
+<td>Photo hash (duplicate-billing check)</td>
+<td>Kept only briefly, then deleted</td>
+</tr>
+<tr>
+<td>Scan counter (random device ID, IP address, counts)</td>
+<td>Kept while needed for the rolling scan limit, and deleted within 90 days after the device's last scan</td>
+</tr>
+<tr>
+<td>Location coordinates</td>
+<td>Not stored on our server. Geoapify generally keeps successful request data no longer than 24 hours.</td>
+</tr>
+<tr>
+<td>Subscription status</td>
+<td>As long as needed to provide Plus</td>
+</tr>
+<tr>
+<td>Bug-report emails</td>
+<td>Up to 2 years after our last exchange, unless we need them longer to resolve a legal issue</td>
+</tr>
+<tr>
+<td>Hosting request logs</td>
+<td>For the limited period our hosting provider keeps them for security and debugging</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="security">
+<h2>8. Security</h2>
+<p>We use reasonable safeguards for the kind of information we handle. These include encrypted connections (HTTPS) between the app and our server, access controls on our systems and vendor accounts, and minimising what we collect and keep. No method of transmission or storage is completely secure, so we can't guarantee absolute security.</p>
+</section>
+<section id="breaches">
+<h2>9. Data breaches</h2>
+<p>If a data breach affects your personal information, we will investigate promptly, take steps to contain it, and notify you and the relevant regulators when the law requires it. See the regional supplements for Australia and New Zealand.</p>
+</section>
+<section id="your-rights">
+<h2>10. Your choices and rights</h2>
+<ul>
+<li><strong>Photo estimates:</strong> turn them off in Profile → Photo estimates → Turn off. If you do, photos and typed descriptions are no longer sent to xAI.</li>
+<li><strong>Location:</strong> decline, or turn it off in iOS Settings. Nearby then won't use your location.</li>
+<li><strong>On-device data:</strong> delete it by clearing MacroRun's data or deleting the app.</li>
+<li><strong>Requests:</strong> you can ask us to tell you what personal information we hold about you, give you a copy, correct it, or delete it. Email hello@tablefourapps.com with the subject "Privacy request". Because we have no accounts, we may ask for the approximate date and time of your scans and the IP address you used, so we can find a scan-counter record. We won't discriminate against you for using your rights. The regional supplements describe additional rights.</li>
+</ul>
+</section>
+<section id="children">
+<h2>11. Children</h2>
+<p>MacroRun is for people 13 and older and is not directed to children. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has sent us information, contact us and we will delete it.</p>
+</section>
+<section id="do-not-track">
+<h2>12. Do Not Track</h2>
+<p>MacroRun does not track you across other companies' apps or websites, so there is no cross-site tracking for a Do Not Track signal to turn off. We do not change our practices in response to browser Do Not Track signals.</p>
+</section>
+<section id="changes">
+<h2>13. Changes to this policy</h2>
+<p>We will post any changes here and update the effective date. For material changes, we will also tell you in the app before the change takes effect. We will update this policy, and ask for consent where required, before we turn on any new data collection such as cloud sync or analytics.</p>
+</section>
+<section id="contact">
+<h2>14. Contact us</h2>
+<p>TableFour LLC, Attn: Privacy Officer<br/>
+2108 N St Ste N, Sacramento, CA 95816<br/>
+Email: <a href="mailto:hello@tablefourapps.com?subject=Privacy%20request">hello@tablefourapps.com</a></p>
+<p>Our Privacy Officer handles privacy questions, requests, and complaints for all regions.</p>
+</section>
+<section class="region-head" id="regional-supplements">
+<h2 class="big">Regional supplements</h2>
+<p>These supplements add to the main policy for people in specific places. If a supplement conflicts with the main policy, the supplement controls for that region.</p>
+</section>
+<section id="us">
+<h2>United States</h2>
+<ul>
+<li><strong>California (CalOPPA):</strong> this policy lists the categories of personal information we collect and the types of third parties we share it with (sections 3–4), explains how to review and request changes (section 10), how we notify you of changes (section 13), our effective date (top), and how we respond to Do Not Track (section 12).</li>
+<li><strong>California Consumer Privacy Act and other state privacy laws:</strong> based on our current size, TableFour may not be subject to the CCPA or similar state laws. Even so, we do <strong>not</strong> sell or share personal information (including for cross-context behavioral advertising), and we honor the access, correction, and deletion requests described in section 10 for all US users. We do not use sensitive personal information to infer characteristics about you. California "Shine the Light": we do not disclose personal information to third parties for their direct marketing.</li>
+<li><strong>Children (COPPA):</strong> see section 11. MacroRun is for users 13 and older.</li>
+<li><strong>Consumer health data</strong> (Washington, Nevada, Connecticut, and similar laws): see the <a href="#consumer-health-data">Consumer Health Data Privacy Policy</a> below.</li>
+</ul>
+</section>
+<section id="consumer-health-data">
+<h2>Consumer Health Data Privacy Policy</h2>
+<p>This section is our consumer health data privacy policy under Washington's My Health My Data Act, Nevada's consumer health data law (SB 370), Connecticut's consumer health data provisions, and similar laws. It can be linked on its own.</p>
+<p><strong>What consumer health data we collect.</strong> We treat the following as consumer health data because they may reveal information about your diet, nutrition, or body:</p>
+<ul>
+<li>meal, fridge, and leftover photos and typed meal descriptions you choose to send for an estimate;</li>
+<li>the protein, carbs, fat, and kcal estimates returned for them;</li>
+<li>for fridge scans, your remaining calories, protein, carbs, and fat for today.</li>
+</ul>
+<p>Your profile, goals, meal log, and workouts stay on your device and are not collected by us. We do not use your location to infer anything about your health, and we do not store it.</p>
+<p><strong>Where it comes from.</strong> Directly from you, when you take or pick a photo or type a description, and from our estimator's response.</p>
+<p><strong>Why we collect and use it.</strong> Only to give you the food estimate or meal suggestion you asked for, and (for the photo hash) to avoid billing the same photo twice. We do not use it for advertising, and we do not sell it.</p>
+<p><strong>Consent.</strong> We collect this data only after you allow photo estimates in the app. You can withdraw consent at any time in Profile → Photo estimates → Turn off. After that, we stop sending new photos or descriptions.</p>
+<p><strong>Who we share it with.</strong> Only processors acting on our behalf: Vercel (our server, which relays the request) and xAI (which produces the estimate). See section 4 for what xAI keeps and for how long. We do not share consumer health data with any other third party or affiliate, and we do not sell it.</p>
+<p><strong>How long we keep it.</strong> We do not store the photo or description after the estimate is returned. The short-lived photo hash is deleted shortly after. The estimate itself is saved only on your device, if you choose to log it.</p>
+<p><strong>Your rights.</strong> Subject to applicable law, you can:</p>
+<ul>
+<li>confirm whether we collect, share, or sell your consumer health data, and get a copy of it;</li>
+<li>get a list of the third parties and affiliates we have shared it with (currently Vercel and xAI), with their contact details on request;</li>
+<li>ask us to delete it (we will also instruct our processors to delete it);</li>
+<li>withdraw your consent.</li>
+</ul>
+<p>Because we don't keep photos or descriptions after the estimate, in most cases we will hold no consumer health data about you by the time you ask. We will tell you so.</p>
+<p><strong>How to make a request.</strong> Email hello@tablefourapps.com with the subject "Consumer health data request". We will respond within 45 days. Where the law allows, we may extend this by another 45 days if reasonably necessary, and we will tell you if we do. We may ask for information to reasonably verify your request.</p>
+<p><strong>Appeals.</strong> If we decline your request, you can appeal by replying with the subject "Consumer health data appeal" within 45 days of our decision. We will respond in writing within 45 days, explaining what we did and why. If your appeal is denied, you may contact your state Attorney General: Washington (atg.wa.gov), Nevada (ag.nv.gov), or Connecticut (portal.ct.gov/ag).</p>
+</section>
+<section id="australia">
+<h2>Australia</h2>
+<p>We handle personal information of people in Australia in line with the Australian Privacy Principles (APPs) in the <em>Privacy Act 1988</em> (Cth). We do this whether or not a legal exemption might apply to a business of our size.</p>
+<ul>
+<li><strong>Collection notice (APP 5):</strong> we are TableFour LLC (contact details in section 14). We collect the information described in section 3, directly from you and your device (and subscription status from Apple), for the purposes described there. No Australian law requires you to give us this information. If you don't allow photo estimates or location, those features won't work, but the rest of the app will. We disclose information to the service providers in section 4.</li>
+<li><strong>Sensitive information:</strong> we treat meal photos, descriptions, and nutrition figures you send as potentially health information. We collect them only with your consent, which you can withdraw at any time (section 10).</li>
+<li><strong>Overseas disclosure (APP 8):</strong> our service providers are located overseas, mainly in the <strong>United States</strong> (Vercel, Neon, xAI) and <strong>Germany/the EU</strong> (Geoapify). xAI may also process data in other countries where it and its sub-processors operate. We choose providers with contractual privacy and security commitments. We remain responsible under the APPs for how they handle your information for us.</li>
+<li><strong>Access and correction (APPs 12 and 13):</strong> email us to access or correct personal information we hold. We will respond within a reasonable time, usually within 30 days, and there is no charge for making a request. If we refuse, we will tell you why and how to complain.</li>
+<li><strong>Complaints:</strong> contact our Privacy Officer first. We aim to respond within 30 days. If you're not satisfied, you can complain to the Office of the Australian Information Commissioner (OAIC): www.oaic.gov.au, 1300 363 992.</li>
+<li><strong>Notifiable Data Breaches:</strong> if we have an eligible data breach likely to result in serious harm, we will notify affected individuals and the OAIC as the Notifiable Data Breaches scheme requires.</li>
+</ul>
+</section>
+<section id="new-zealand">
+<h2>New Zealand</h2>
+<p>We handle personal information of people in New Zealand in line with the <em>Privacy Act 2020</em> and its Information Privacy Principles (IPPs).</p>
+<ul>
+<li><strong>Privacy officer:</strong> our Privacy Officer (section 14) is responsible for compliance with the Privacy Act.</li>
+<li><strong>Collection:</strong> we collect the information in section 3 for the purposes described there, mostly directly from you (IPP 2 and IPP 3). The only information we get from another organisation about you is your subscription status from Apple (IPP 3A). We use it only to provide Plus. Giving us information is voluntary. Without photo or location permission, those features won't work.</li>
+<li><strong>Overseas service providers (IPP 12):</strong> our service providers in the United States and Germany/the EU (section 4) process information on our behalf, only for the purposes in this policy. We remain responsible for that information under the Privacy Act, and we require providers to protect it.</li>
+<li><strong>Access and correction (IPPs 6 and 7):</strong> you can ask for access to, or correction of, personal information we hold about you by emailing us. We will respond as soon as reasonably practicable, and within 20 working days.</li>
+<li><strong>Complaints:</strong> contact our Privacy Officer first. If you're not satisfied, you can complain to the Office of the Privacy Commissioner: www.privacy.org.nz, 0800 803 909.</li>
+<li><strong>Privacy breaches:</strong> if we have a notifiable privacy breach (one that has caused, or is likely to cause, serious harm), we will notify the Privacy Commissioner and affected people as soon as practicable.</li>
+</ul>
+<p><em>Additional regional supplements will be added here if MacroRun becomes available in more countries.</em></p></section>
       <footer>
         <p>TableFour LLC</p>
-        <p><a href="/terms/">Terms</a></p>
+        <p><a href="/terms/">Terms</a> · <a href="#consumer-health-data">Consumer Health Data Privacy Policy</a></p>
       </footer>
     </main>
   </body>
