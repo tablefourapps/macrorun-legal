@@ -129,7 +129,7 @@
 <p><strong>f. Optional usage analytics (off unless you say yes).</strong> MacroRun asks before recording any usage analytics. Analytics are off by default. If you choose "Help improve MacroRun" on the analytics consent screen, we record product events on our own servers (hosted on Neon) to understand how MacroRun is used and improve it. Events cover things like scan attempts, views of the Plus screen, Nearby opens, finished training sessions, and screens viewed, together with a random, pseudonymous analytics ID and a record of your consent choice. Events never include meal photos, your location, your name, or your email address. We keep each event for up to 2 years and then delete it. You can turn analytics off at any time in You → Privacy &amp; data. We then stop recording new events. Email us if you also want past events deleted. We do not use a third-party analytics SDK. We do not sell or share analytics data, and we do not use it for advertising or to track you across other companies' apps or websites.</p>
 <p><strong>g. Bug reports and emails.</strong> "Report a bug" opens your mail app addressed to hello@tablefourapps.com. We receive whatever you choose to send, such as your email address, your message, attachments, and the optional app and device version. We use it to reply and fix problems.</p>
 <p><strong>h. Basic technical data.</strong> Our app and API are hosted on xAI's Grok Build platform, which uses Cloudflare (network edge and security, including bot protection) and Vercel (application hosting) as its infrastructure providers. Like any internet service, these providers process your IP address and basic request details (such as time and the app request made) to deliver and secure the service when the app or our website talks to our server. This data is used to deliver the request, keep the service secure, and debug errors.</p>
-<p><strong>i. Security cookie.</strong> Cloudflare may set one strictly necessary security cookie, <code>__cf_bm</code>, when our website or the app connects to our server, to detect bots. It is not used for advertising or analytics. Cloudflare says it expires after 30 minutes of continuous inactivity.</p>
+<p><strong>i. Security cookie.</strong> Cloudflare may set one strictly necessary security cookie, __cf_bm, when our website or the app connects to our server, to detect bots. It is not used for advertising or analytics. Cloudflare says it expires after 30 minutes of continuous inactivity.</p>
 <p>We do not collect your name, contacts, or advertising identifier (IDFA or Android advertising ID), and we do not use third-party ad or analytics SDKs.</p>
 </section>
 <section id="vendors">
@@ -153,7 +153,7 @@
 </tr>
 <tr>
 <td><strong>Cloudflare</strong> (network edge and security, as Grok Build's infrastructure provider)</td>
-<td>IP address, request data, photos/text/coordinates in transit; the <code>__cf_bm</code> security cookie</td>
+<td>IP address, request data, photos/text/coordinates in transit; the __cf_bm security cookie</td>
 <td>Delivers requests and protects the service, including bot protection</td>
 <td>Global network (usually the location nearest you)</td>
 </tr>
@@ -255,7 +255,7 @@
 <td>Request logs are kept according to the hosting providers' own retention practices, and we do not use them to build profiles.</td>
 </tr>
 <tr>
-<td>Cloudflare security cookie (<code>__cf_bm</code>)</td>
+<td>Cloudflare security cookie (__cf_bm)</td>
 <td>In your browser or the app. Expires after 30 minutes of continuous inactivity</td>
 </tr>
 </tbody>
@@ -314,10 +314,12 @@ Email: <a href="mailto:hello@tablefourapps.com?subject=Privacy%20request">hello@
 <section id="consumer-health-data">
 <h2>Consumer Health Data Privacy Policy</h2>
 <p>This section is our consumer health data privacy policy under Washington's My Health My Data Act, Nevada's consumer health data law (SB 370), Connecticut's consumer health data provisions, and similar laws. It can be linked on its own.</p>
-<p><strong>What consumer health data we collect.</strong> We treat the following as consumer health data because they may reveal information about your diet, nutrition, or body:
-- meal, fridge, and leftover photos and typed meal descriptions you choose to send for an estimate;
-- the protein, carbs, fat, and kcal estimates returned for them;
-- for fridge scans, your remaining calories, protein, carbs, and fat for today.</p>
+<p><strong>What consumer health data we collect.</strong> We treat the following as consumer health data because they may reveal information about your diet, nutrition, or body:</p>
+<ul>
+<li>meal, fridge, and leftover photos and typed meal descriptions you choose to send for an estimate;</li>
+<li>the protein, carbs, fat, and kcal estimates returned for them;</li>
+<li>for fridge scans, your remaining calories, protein, carbs, and fat for today.</li>
+</ul>
 <p>Your profile, goals, meal log, and workouts stay on your device and are not collected by us. We do not use your location to infer anything about your health, and we do not store it.</p>
 <p><strong>Where it comes from.</strong> Directly from you, when you take or pick a photo or type a description, and from our estimator's response.</p>
 <p><strong>Why we collect and use it.</strong> Only to give you the food estimate or meal suggestion you asked for, and (for the photo hash) to avoid billing the same photo twice. We do not use it for advertising, and we do not sell it.</p>
