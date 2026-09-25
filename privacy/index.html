@@ -128,7 +128,8 @@
 <p><strong>e. Subscription status.</strong> MacroRun Plus is bought through Apple In-App Purchase on iPhone or Google Play Billing on Android. Apple or Google processes the payment. We receive the purchase and entitlement status (for example, whether Plus is active) with a scan request, and we do not receive your card details. We use that status to unlock Plus features and apply the Plus scan limit. We do not store a separate subscription record, purchase token, or transaction ID on our server. On Android, the result of checking your purchase with Google is held briefly in server memory (up to 5 minutes) and is not written to our database.</p>
 <p><strong>f. Optional usage analytics (off unless you say yes).</strong> MacroRun asks before recording any usage analytics. Analytics are off by default. If you choose "Help improve MacroRun" on the analytics consent screen, we record product events on our own servers (hosted on Neon) to understand how MacroRun is used and improve it. Events cover things like scan attempts, views of the Plus screen, Nearby opens, finished training sessions, and screens viewed, together with a random, pseudonymous analytics ID and a record of your consent choice. Events never include meal photos, your location, your name, or your email address. We keep each event for up to 2 years and then delete it. You can turn analytics off at any time in You → Privacy &amp; data. We then stop recording new events. Email us if you also want past events deleted. We do not use a third-party analytics SDK. We do not sell or share analytics data, and we do not use it for advertising or to track you across other companies' apps or websites.</p>
 <p><strong>g. Bug reports and emails.</strong> "Report a bug" opens your mail app addressed to hello@tablefourapps.com. We receive whatever you choose to send, such as your email address, your message, attachments, and the optional app and device version. We use it to reply and fix problems.</p>
-<p><strong>h. Basic technical data.</strong> Like any internet service, our hosting provider (Vercel) receives your IP address and basic request details (such as time and the app request made) when the app talks to our server. This data is used to deliver the request, keep the service secure, and debug errors.</p>
+<p><strong>h. Basic technical data.</strong> Our app and API are hosted on xAI's Grok Build platform, which uses Cloudflare (network edge and security, including bot protection) and Vercel (application hosting) as its infrastructure providers. Like any internet service, these providers process your IP address and basic request details (such as time and the app request made) to deliver and secure the service when the app or our website talks to our server. This data is used to deliver the request, keep the service secure, and debug errors.</p>
+<p><strong>i. Security cookie.</strong> Cloudflare may set one strictly necessary security cookie, <code>__cf_bm</code>, when our website or the app connects to our server, to detect bots. It is not used for advertising or analytics. Cloudflare says it expires after 30 minutes of continuous inactivity.</p>
 <p>We do not collect your name, contacts, or advertising identifier (IDFA or Android advertising ID), and we do not use third-party ad or analytics SDKs.</p>
 </section>
 <section id="vendors">
@@ -145,7 +146,19 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Vercel</strong> (hosting / API proxy)</td>
+<td><strong>xAI</strong> (Grok Build hosting platform; a separate role from the Grok API row below)</td>
+<td>IP address, request data, photos/text/coordinates in transit</td>
+<td>Hosts and operates our app and API, and relays requests</td>
+<td>United States</td>
+</tr>
+<tr>
+<td><strong>Cloudflare</strong> (network edge and security, as Grok Build's infrastructure provider)</td>
+<td>IP address, request data, photos/text/coordinates in transit; the <code>__cf_bm</code> security cookie</td>
+<td>Delivers requests and protects the service, including bot protection</td>
+<td>Global network (usually the location nearest you)</td>
+</tr>
+<tr>
+<td><strong>Vercel</strong> (application hosting, as Grok Build's infrastructure provider)</td>
 <td>IP address, request data, photos/text/coordinates in transit</td>
 <td>Runs our server and relays requests</td>
 <td>United States</td>
@@ -182,6 +195,7 @@
 </tr>
 </tbody>
 </table></div>
+<p><strong>About hosting:</strong> xAI's role as our hosting platform (Grok Build) is separate from its role as our AI estimator (Grok API). The zero-data-retention option described below applies to the Grok API, not to hosting request logs.</p>
 <p><strong>About xAI:</strong> xAI processes the photo or text only to return the estimate. We use xAI's zero-data-retention option, under which xAI does not store the request after returning the response, and under xAI's API terms it does not use API inputs or outputs to train its models.</p>
 <p><strong>About Geoapify:</strong> Geoapify's privacy policy says it generally keeps data for successful API requests for no longer than 24 hours.</p>
 <p>We may also disclose information if the law requires it, to protect people's safety or our rights, or as part of a merger or sale of our business (in which case this policy continues to apply to it). We do not sell personal information. We do not share it for cross-context behavioral advertising. We do not use it for targeted advertising. We do not "track" you as Apple defines it.</p>
@@ -237,8 +251,12 @@
 <td>Up to 2 years after our last exchange, unless we need them longer to resolve a legal issue</td>
 </tr>
 <tr>
-<td>Hosting request logs</td>
-<td>For the limited period our hosting provider keeps them for security and debugging</td>
+<td>Hosting request logs (xAI Grok Build, Cloudflare, Vercel)</td>
+<td>Request logs are kept according to the hosting providers' own retention practices, and we do not use them to build profiles.</td>
+</tr>
+<tr>
+<td>Cloudflare security cookie (<code>__cf_bm</code>)</td>
+<td>In your browser or the app. Expires after 30 minutes of continuous inactivity</td>
 </tr>
 </tbody>
 </table></div>
@@ -304,13 +322,15 @@ Email: <a href="mailto:hello@tablefourapps.com?subject=Privacy%20request">hello@
 <p><strong>Where it comes from.</strong> Directly from you, when you take or pick a photo or type a description, and from our estimator's response.</p>
 <p><strong>Why we collect and use it.</strong> Only to give you the food estimate or meal suggestion you asked for, and (for the photo hash) to avoid billing the same photo twice. We do not use it for advertising, and we do not sell it.</p>
 <p><strong>Consent.</strong> We collect this data only after you allow photo estimates in the app. You can withdraw consent at any time in Profile → Photo estimates → Turn off. After that, we stop sending new photos or descriptions.</p>
-<p><strong>Who we share it with.</strong> Only processors acting on our behalf: Vercel (our server, which relays the request) and xAI (which produces the estimate). See section 4 for what xAI keeps and for how long. We do not share consumer health data with any other third party or affiliate, and we do not sell it.</p>
+<p><strong>Who we share it with.</strong> Only processors acting on our behalf: our hosting providers, xAI's Grok Build platform with Cloudflare and Vercel (which host our server and relay the request), and xAI's Grok API (which produces the estimate). See section 4 for what xAI keeps and for how long. We do not share consumer health data with any other third party or affiliate, and we do not sell it.</p>
 <p><strong>How long we keep it.</strong> We do not store the photo or description after the estimate is returned. The photo hash is kept in server memory for up to 30 days, then deleted, and it is not stored in our database. The estimate itself is saved only on your device, if you choose to log it.</p>
-<p><strong>Your rights.</strong> Subject to applicable law, you can:
-- confirm whether we collect, share, or sell your consumer health data, and get a copy of it;
-- get a list of the third parties and affiliates we have shared it with (currently Vercel and xAI), with their contact details on request;
-- ask us to delete it (we will also instruct our processors to delete it);
-- withdraw your consent.</p>
+<p><strong>Your rights.</strong> Subject to applicable law, you can:</p>
+<ul>
+<li>confirm whether we collect, share, or sell your consumer health data, and get a copy of it;</li>
+<li>get a list of the third parties and affiliates we have shared it with (currently xAI, Cloudflare, and Vercel), with their contact details on request;</li>
+<li>ask us to delete it (we will also instruct our processors to delete it);</li>
+<li>withdraw your consent.</li>
+</ul>
 <p>Because we don't keep photos or descriptions after the estimate, in most cases we will hold no consumer health data about you by the time you ask. We will tell you so.</p>
 <p><strong>How to make a request.</strong> Email hello@tablefourapps.com with the subject "Consumer health data request". We will respond within 45 days. Where the law allows, we may extend this by another 45 days if reasonably necessary, and we will tell you if we do. We may ask for information to reasonably verify your request.</p>
 <p><strong>Appeals.</strong> If we decline your request, you can appeal by replying with the subject "Consumer health data appeal" within 45 days of our decision. We will respond in writing within 45 days, explaining what we did and why. If your appeal is denied, you may contact your state Attorney General: Washington (atg.wa.gov), Nevada (ag.nv.gov), or Connecticut (portal.ct.gov/ag).</p>
@@ -321,7 +341,7 @@ Email: <a href="mailto:hello@tablefourapps.com?subject=Privacy%20request">hello@
 <ul>
 <li><strong>Collection notice (APP 5):</strong> we are TableFour LLC (contact details in section 14). We collect the information described in section 3, directly from you and your device (and subscription status from Apple or Google), for the purposes described there. No Australian law requires you to give us this information. If you don't allow photo estimates or location, those features won't work, but the rest of the app will. We disclose information to the service providers in section 4.</li>
 <li><strong>Sensitive information:</strong> we treat meal photos, descriptions, and nutrition figures you send as potentially health information. We collect them only with your consent, which you can withdraw at any time (section 10).</li>
-<li><strong>Overseas disclosure (APP 8):</strong> our service providers are located overseas, mainly in the <strong>United States</strong> (Vercel, Neon, xAI, and Apple and Google for app-store services) and <strong>Germany/the EU</strong> (Geoapify). xAI may also process data in other countries where it and its sub-processors operate. We choose providers with contractual privacy and security commitments. We remain responsible under the APPs for how they handle your information for us.</li>
+<li><strong>Overseas disclosure (APP 8):</strong> our service providers are located overseas, mainly in the <strong>United States</strong> (xAI, Vercel, Neon, and Apple and Google for app-store services) and <strong>Germany/the EU</strong> (Geoapify). xAI may also process data in other countries where it and its sub-processors operate. Cloudflare runs a global network and usually handles requests at the location nearest you. We choose providers with contractual privacy and security commitments. We remain responsible under the APPs for how they handle your information for us.</li>
 <li><strong>Access and correction (APPs 12 and 13):</strong> email us to access or correct personal information we hold. We will respond within a reasonable time, usually within 30 days, and there is no charge for making a request. If we refuse, we will tell you why and how to complain.</li>
 <li><strong>Complaints:</strong> contact our Privacy Officer first. We aim to respond within 30 days. If you're not satisfied, you can complain to the Office of the Australian Information Commissioner (OAIC): www.oaic.gov.au, 1300 363 992.</li>
 <li><strong>Notifiable Data Breaches:</strong> if we have an eligible data breach likely to result in serious harm, we will notify affected individuals and the OAIC as the Notifiable Data Breaches scheme requires.</li>
@@ -333,7 +353,7 @@ Email: <a href="mailto:hello@tablefourapps.com?subject=Privacy%20request">hello@
 <ul>
 <li><strong>Privacy officer:</strong> our Privacy Officer (section 14) is responsible for compliance with the Privacy Act.</li>
 <li><strong>Collection:</strong> we collect the information in section 3 for the purposes described there, mostly directly from you (IPP 2 and IPP 3). The only information we get from another organisation about you is your subscription status from Apple or Google (IPP 3A). We use it only to provide Plus. Giving us information is voluntary. Without photo or location permission, those features won't work.</li>
-<li><strong>Overseas service providers (IPP 12):</strong> our service providers in the United States and Germany/the EU (section 4) process information on our behalf, only for the purposes in this policy. We remain responsible for that information under the Privacy Act, and we require providers to protect it.</li>
+<li><strong>Overseas service providers (IPP 12):</strong> our service providers in the United States and Germany/the EU, and Cloudflare's global network (usually at the location nearest you) (section 4), process information on our behalf, only for the purposes in this policy. We remain responsible for that information under the Privacy Act, and we require providers to protect it.</li>
 <li><strong>Access and correction (IPPs 6 and 7):</strong> you can ask for access to, or correction of, personal information we hold about you by emailing us. We will respond as soon as reasonably practicable, and within 20 working days.</li>
 <li><strong>Complaints:</strong> contact our Privacy Officer first. If you're not satisfied, you can complain to the Office of the Privacy Commissioner: www.privacy.org.nz, 0800 803 909.</li>
 <li><strong>Privacy breaches:</strong> if we have a notifiable privacy breach (one that has caused, or is likely to cause, serious harm), we will notify the Privacy Commissioner and affected people as soon as practicable.</li>
