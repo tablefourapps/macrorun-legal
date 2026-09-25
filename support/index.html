@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MacroRun Support</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0f1115;
+        --text: #f2f2f4;
+        --muted: #a8adb8;
+        --accent: #7dd3a0;
+        --line: #2a2f3a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+        color: var(--text);
+        background: var(--bg);
+      }
+      header, main, footer {
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 1.25rem 1.1rem;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        align-items: baseline;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--line);
+      }
+      .brand { font-weight: 700; letter-spacing: 0.02em; text-decoration: none; color: var(--text); }
+      nav { display: flex; flex-wrap: wrap; gap: 0.9rem; font-size: 0.95rem; }
+      nav a { color: var(--muted); text-decoration: none; }
+      nav a:hover { color: var(--text); }
+      main { padding-top: 1.5rem; padding-bottom: 2rem; }
+      h1 {
+        font-size: clamp(1.5rem, 3.5vw, 1.85rem);
+        line-height: 1.2;
+        margin: 0 0 0.5rem;
+      }
+      .byline {
+        margin: 0 0 1.5rem;
+        color: var(--muted);
+      }
+      section {
+        margin: 0 0 1.25rem;
+        padding: 1rem 0 0;
+        border-top: 1px solid var(--line);
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 0 0 0.4rem;
+        color: var(--text);
+      }
+      p { margin: 0; color: var(--muted); }
+      p + p { margin-top: 0.6rem; }
+      footer {
+        border-top: 1px solid var(--line);
+        margin-top: 0.5rem;
+        padding-bottom: 2.5rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      a { color: var(--accent); }
+      footer a { color: var(--accent); }
+      strong { color: var(--text); }
+      section { scroll-margin-top: 1rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">MacroRun</a>
+      <nav>
+        <a href="/#product">Product</a>
+        <a href="/#company">Company</a>
+        <a href="/#contact">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/privacy/#consumer-health-data">Consumer Health Data Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/support/">Support</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Support</h1>
+      <p class="byline">Help for MacroRun, published by TableFour LLC.</p>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email <a href="mailto:hello@tablefourapps.com">hello@tablefourapps.com</a>.
+          Privacy requests are handled as described in our <a href="/privacy/#your-rights">Privacy Policy</a>.
+        </p>
+        <p>TableFour LLC, 2108 N St Ste N, Sacramento, CA 95816</p>
+      </section>
+
+      <section id="restore-plus">
+        <h2>Restore Plus</h2>
+        <p>
+          Open MacroRun, go to the Plus screen, and tap Restore Purchases. On iPhone, use the same Apple ID you subscribed with. On Android, use the same Google account you subscribed with in Google Play.
+        </p>
+      </section>
+
+      <section id="manage-subscription">
+        <h2>Cancel or manage a subscription</h2>
+        <p>On iPhone: Settings > [your name] > Subscriptions.</p>
+        <p>On iPhone, cancel at least 24 hours before the end of the current period.</p>
+        <p>On Android: Google Play > Subscriptions.</p>
+        <p>Deleting the app does not cancel a subscription.</p>
+      </section>
+
+      <section id="erase-data">
+        <h2>Erase your data</h2>
+        <p>
+          Your profile, meal log, workouts, saved foods, and achievements stay on your device.
+          MacroRun has no sign-in, so there is no account to delete. To delete this data, clear
+          MacroRun's data on your device or delete the app. Because we don't hold this data, we
+          can't recover it for you if it is deleted.
+        </p>
+        <p>Photo estimates: turn them off in Profile → Photo estimates → Turn off.</p>
+        <p>
+          Usage analytics: turn them off in You → Privacy &amp; data. Email
+          <a href="mailto:hello@tablefourapps.com">hello@tablefourapps.com</a> if you also want
+          past events deleted.
+        </p>
+        <p>
+          Scan counter: our server keeps a scan counter (a random device ID, a salted hash of the
+          IP address, and counts) for the rolling scan limit, and deletes it within 90 days after
+          your device's last scan.
+        </p>
+        <p>
+          To ask what personal information we hold, or to have it deleted, email
+          <a href="mailto:hello@tablefourapps.com">hello@tablefourapps.com</a> with the subject
+          "Privacy request". See <a href="/privacy/#your-rights">Your rights</a>.
+        </p>
+      </section>
+
+      <section id="policies">
+        <h2>Privacy and Terms</h2>
+        <p><a href="/privacy/">Privacy Policy</a></p>
+        <p><a href="/terms/">Terms of Use</a></p>
+      </section>
+
+      <footer>
+        <p>TableFour LLC</p>
+        <p><a href="/support/">Support</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

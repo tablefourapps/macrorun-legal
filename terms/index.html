@@ -69,6 +69,8 @@
       }
       a { color: var(--accent); }
       footer a { color: var(--accent); }
+      strong { color: var(--text); }
+      section { scroll-margin-top: 1rem; }
     </style>
   </head>
   <body>
@@ -79,43 +81,69 @@
         <a href="/#company">Company</a>
         <a href="/#contact">Contact</a>
         <a href="/privacy/">Privacy</a>
+        <a href="/privacy/#consumer-health-data">Consumer Health Data Privacy Policy</a>
         <a href="/terms/">Terms</a>
+        <a href="/support/">Support</a>
       </nav>
     </header>
 <main>
       <h1>MacroRun Terms</h1>
       <p class="byline">Published by TableFour LLC for MacroRun.</p>
-      <section>
+      <section id="what-macrorun-is">
         <h2>What MacroRun is</h2>
         <p>MacroRun is a leftover-macro tracker. You log meals, see what protein, carbs, fat, and kcal remain today, and order nearby dishes that actually fit those leftovers.</p>
       </section>
-      <section>
+      <section id="eligibility">
+        <h2>Who can use MacroRun</h2>
+        <p>You must be at least 13 years old to use MacroRun. If you are under the age of majority where you live (18 in most US states, Australia, and New Zealand), you may use MacroRun only with the involvement of a parent or guardian, who agrees to these Terms for you and is responsible for any purchases made on your device.</p>
+      </section>
+      <section id="estimates">
         <h2>Estimates, not medical advice</h2>
-        <p>Suggested fridge meals, describe estimates, and catalog macros are estimates, not lab values and not medical advice. You review and edit before save.</p>
+        <p>Protein, carbs, fat, and calorie figures, including photo and typed-meal estimates, fridge meal suggestions, and restaurant catalog macros, are estimates (4×P + 4×C + 9×F), not lab values. They can be wrong. Review and edit them before you save. MacroRun is not medical advice, diagnosis, or treatment, and it is not a dietitian. Don't rely on it to manage a medical condition (for example diabetes, food allergies, kidney disease, pregnancy, or an eating disorder). Talk to a qualified health professional before making significant diet changes.</p>
       </section>
-      <section>
+      <section id="orders">
         <h2>Orders leave the app</h2>
-        <p>Order opens DoorDash, Uber Eats, Grubhub, or Maps (pickup, including In-N-Out) in the system browser or a new tab. We do not take payment for restaurant orders. Those services have their own terms.</p>
+        <p>Order opens Maps (pickup, including In-N-Out) in the system browser or a new tab. DoorDash, Uber Eats, Grubhub, or a restaurant site open only when we have a verified order URL. We do not take payment for restaurant orders. Those services have their own terms.</p>
       </section>
-      <section>
+      <section id="photos-and-location">
         <h2>Photos and location</h2>
-        <p>Leftover photos, plated-meal photos, and typed meal descriptions you choose to send go to our estimator (xAI Grok) after you allow it. Location is optional: when you open or refresh Nearby, we send that lat/lng through our server to Google Places to list restaurants. Profile data stays on-device.</p>
+        <p>Leftover, plated-meal, and fridge photos and typed meal descriptions you choose to send go to our estimator (xAI Grok) after you allow it. Location is optional: when you open or refresh Nearby, we send your latitude and longitude through our server to Geoapify to list restaurants (map data © OpenStreetMap contributors, ODbL). Your profile and logs stay on your device. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
       </section>
-      <section>
-        <h2>Plus</h2>
-        <p>Plus is 50 photo scans per 30 days. Scan Food and Fridge share that pool. Leftover-nearby, diary, USDA, Train, and How-to stay free. On iOS, payment is charged to your Apple ID through the App Store sheet and auto-renews until you cancel in Apple ID Settings → Subscriptions. A 7-day trial is offered only if Apple says this Apple ID is eligible. On Android, payment is charged through Google Play Billing and auto-renews until you cancel in Google Play → Payments &amp; subscriptions. Subscription length and price are shown in Google Play before you confirm. Manage or cancel on the same store you used to subscribe.</p>
-      </section>
-      <section>
+      <section id="exercise">
         <h2>Exercise and training</h2>
         <p>Train programs and How-to demos are general fitness information, not medical advice, diagnosis, physical therapy, or personal training. Exercise can cause injury. Talk to a doctor before you start or change a workout, especially if you have a medical condition, pain, or are returning from injury. Stop if you feel pain, dizziness, or shortness of breath, and seek medical care when needed. You use Train at your own risk.</p>
       </section>
-      <section>
+      <section id="how-to">
         <h2>Third-party How-to links</h2>
         <p>Some How-to buttons open exercise pages on other sites (for example MuscleWiki or ExRx) in your browser. Those sites own their content and terms. MacroRun does not control whether a link works, what they show, or their availability. A missing or broken How-to is not a MacroRun form video. We do not sell or rehost their videos in this build.</p>
       </section>
+      <section id="plus">
+        <h2>MacroRun Plus</h2>
+        <p>Plus is an auto-renewing subscription. It gives you 50 successful photo scans per 30 days (Free: 3 per 7 days), all 16 Train programs (2 starter programs stay free), and progress reports for the last 30 days, the last 90 days, or a custom range of up to 90 days (Free: the last 7 days). Everything else in MacroRun, including Fridge, Nearby, the diary, food search, barcode scanning, How-to demos, and CSV export, stays free. You pay the price and billing period shown in the App Store or Google Play before you confirm. There is no free trial. Payment is charged to your Apple ID (iPhone) or Google Play account (Android) when you confirm the purchase. <strong>Your subscription renews automatically at the end of each billing period at the then-current price until you cancel.</strong> On iPhone, cancel at least 24 hours before the end of the current period in Settings > [your name] > Subscriptions; Apple charges the renewal within 24 hours before the period ends. On Android, cancel before the renewal date in Google Play > Subscriptions. Cancelling stops future renewals, and you keep Plus until the end of the period you already paid for. Payments and refunds are handled by Apple or Google under their policies, except where the law gives you other rights. If the price changes, Apple or Google will notify you in advance as required and, where required, ask you to agree before your subscription renews at the new price.</p>
+      </section>
+      <section id="australian-consumers">
+        <h2>Australian consumers</h2>
+        <p>If you are a consumer in Australia, nothing in these Terms excludes, restricts, or modifies any guarantee, right, or remedy you have under the Australian Consumer Law (Schedule 2 to the <em>Competition and Consumer Act 2010</em> (Cth)) or other law that cannot lawfully be excluded, restricted, or modified. Any disclaimer or limitation of liability in these Terms applies only to the extent permitted by that law.</p>
+      </section>
+      <section id="new-zealand-consumers">
+        <h2>New Zealand consumers</h2>
+        <p>If you are in New Zealand and use MacroRun for personal, domestic, or household purposes, nothing in these Terms limits your rights under the <em>Consumer Guarantees Act 1993</em>, the <em>Fair Trading Act 1986</em>, or any other law that cannot be excluded. If you use MacroRun for business purposes, the Consumer Guarantees Act does not apply, to the extent permitted by section 43 of that Act.</p>
+      </section>
+      <section id="disclaimers">
+        <h2>Disclaimers and liability</h2>
+        <p>To the extent permitted by law, MacroRun is provided "as is" and "as available", and TableFour LLC is not liable for indirect or consequential loss, or for loss arising from reliance on estimates. Nothing in these Terms limits liability that cannot be limited by law, including your rights described under "<a href="#australian-consumers">Australian consumers</a>" and "<a href="#new-zealand-consumers">New Zealand consumers</a>" above.</p>
+      </section>
+      <section id="privacy">
+        <h2>Privacy</h2>
+        <p>Our <a href="/privacy/">Privacy Policy</a> explains what we collect and why, including our <a href="/privacy/#consumer-health-data">Consumer Health Data Privacy Policy</a> for US states such as Washington and Nevada: <a href="https://macrorun.tablefourapps.com/privacy/">https://macrorun.tablefourapps.com/privacy/</a></p>
+      </section>
+      <section id="governing-law">
+        <h2>Governing law</h2>
+        <p>These Terms are governed by the laws of the State of California, USA, without regard to conflict-of-laws rules. If you are a consumer in Australia or New Zealand, you also keep the protection of the mandatory laws of the place where you live, and you may bring a claim in the courts there.</p>
+      </section>
       <footer>
         <p>TableFour LLC</p>
-        <p><a href="/privacy/">Privacy</a></p>
+        <p><a href="/support/">Support</a> · <a href="/privacy/">Privacy</a></p>
       </footer>
     </main>
   </body>
